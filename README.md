@@ -21,8 +21,19 @@ and add class ```right``` to *'arrow'*, which you want to be have right action
     <img class="example-arrow" src="img/left-arrow.png">
     <img class="example-arrow right" src="img/right-arrow.png">
 ```
-that *important*, next you need to attach function ```tSlider()```, at right action
+that *important*, next you need to attach function ```tSlider()```, at right action,
 ```html
-    <img class="example-arrow" src="img/left-arrow.png" onClick='tSlider()'>
-    <img class="example-arrow right" src="img/right-arrow.png" onClick='tSlider()'>
+    <img class="example-arrow" src="img/left-arrow.png" onClick="tSlider()">
+    <img class="example-arrow right" src="img/right-arrow.png" onClick="tSlider()">
+```
+next you must add attribute *'data-slider'* with class name of your slider,
+```html
+    <img class="example-arrow" src="img/left-arrow.png" onClick="tSlider()" data-slider='slider-className'>
+    <img class="example-arrow right" src="img/right-arrow.png" onClick="tSlider()" data-slider='slider-className'>
+```
+make DOM object slider with attributes ```data-width```, and ```data-position``` (0 - recommend),<br>
+```html
+    <div class="className" data-position="0">
+        
+    </div>
 ```
