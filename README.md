@@ -1,9 +1,9 @@
 tSlider
 =======
 *Trio Slider version 1.0*<br>
-**Jquery plugin**, for slider without ```java-script``` programming.<br>
+**Jquery plugin**, for a slider without ```java-script``` programming.<br>
 ##Installation##
-To install you need *jquery* version 1.6 or *higher*. Attach ```jquery.tslider.js``` after ```jquery.js```<br>
+For install you must have *jquery* version 1.6 or *higher*. Attach ```jquery.tslider.js``` after ```jquery.js```<br>
 You will see something like this:
 ```html
     <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -11,27 +11,27 @@ You will see something like this:
 ```
 **Remember:** *attach javascript files only at end of document.*
 ##How to use##
-Create 2 DOM objects any type(div,span, a, img, etc) with same class name, for slider arrows example:
+Create 2 DOM objects of any types(div,span, a, img, etc) with same class name, these objects will be arrows in slider:
 ```html
     <img class="example-arrow" src="img/left-arrow.png">
     <img class="example-arrow" src="img/right-arrow.png">
 ```
-add class ```right``` to *'arrow'*, which you want to be have right action
+add class ```right``` to *'example-arrow'*, for differences between directions
 ```html
     <img class="example-arrow" src="img/left-arrow.png">
     <img class="example-arrow right" src="img/right-arrow.png">
 ```
-that *important*, next you need to attach function ```tSlider()```, at right action,
+that *important*. Next you need to attach function ```tSlider()```, for necessary action,
 ```html
     <img class="example-arrow" src="img/left-arrow.png" onClick="tSlider()">
     <img class="example-arrow right" src="img/right-arrow.png" onClick="tSlider()">
 ```
-next you must add attribute *'data-slider'* with class name of your slider,
+next you need to add attribute *'data-slider'* with class name of your slider
 ```html
     <img class="example-arrow" src="img/left-arrow.png" onClick="tSlider()" data-slider='any-class-name-slider'>
     <img class="example-arrow right" src="img/right-arrow.png" onClick="tSlider()" data-slider='any-class-name-slider'>
 ```
-make DOM object slider, and fill slides with element class-name: ```slider-block```:
+make DOM slider object, and insert slides with element class-name: ```slider-block```:
 ```html
     <div class="any-class-name-slider">
         <div class="slider-block">
@@ -45,13 +45,13 @@ make DOM object slider, and fill slides with element class-name: ```slider-block
         </div>
     </div>
 ```
-see CSS properties for your slider(you can use it, for pallete, and always use important, and never change it):
+see CSS for your slider ( You can change any selector properties, except property with !important directive ):
 ```css
     .any-class-name-slider{
         /* Use this, and never change */
         overflow: hidden !important;
         white-space: nowrap !important;
-        position: (relative or absolute) !important;
+        position: (relative or absolute) !important; /* SELECT ONE OF THEM */
         
         /* Edit this */
         left: 0;
