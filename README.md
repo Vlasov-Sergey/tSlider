@@ -5,7 +5,9 @@ tSlider
 ##Install##
 To install you need *jquery* version 1.6 or *highter*. Attach ```jquery.tslider.js``` after ```jquery.js```<br>
 You will see something like this:
-``` 
+```html
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.tslider.js"></script>
 ```
+**Remember:** *attach javascripts files only at end of document.*
+##How to use##
