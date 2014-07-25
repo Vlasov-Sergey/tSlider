@@ -31,9 +31,9 @@ next you must add attribute *'data-slider'* with class name of your slider,
     <img class="example-arrow" src="img/left-arrow.png" onClick="tSlider()" data-slider='slider-className'>
     <img class="example-arrow right" src="img/right-arrow.png" onClick="tSlider()" data-slider='slider-className'>
 ```
-make DOM object slider with attributes ```data-width```, and ```data-position``` (0 - recommend),<br>
+make DOM object slider<br>
 ```html
-    <div class="className" data-position="0">
+    <div class="className">
         
     </div>
 ```
