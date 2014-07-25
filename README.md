@@ -1,7 +1,7 @@
 tSlider
 =======
 *Trio Slider version 1.0*<br>
-**Jquery plugin**, for develop slider without ```java-script``` programming.<br>
+**Jquery plugin**, for slider without ```java-script``` programming.<br>
 ##Installation##
 To install you need *jquery* version 1.6 or *higher*. Attach ```jquery.tslider.js``` after ```jquery.js```<br>
 You will see something like this:
