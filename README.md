@@ -1,7 +1,7 @@
 tSlider
 =======
 *Trio Slider version 1.0*<br>
-**Jquery plugin**, to make slider without ```java-script``` programming.<br>
+**Jquery plugin**, for develop slider without ```java-script``` programming.<br>
 ##Installation##
 To install you need *jquery* version 1.6 or *higher*. Attach ```jquery.tslider.js``` after ```jquery.js```<br>
 You will see something like this:
@@ -9,7 +9,7 @@ You will see something like this:
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.tslider.js"></script>
 ```
-**Remember:** *attach javascripts files only at end of document.*
+**Remember:** *attach javascript files only at end of document.*
 ##How to use##
 Create 2 DOM objects any type(div,span, a, img, etc) with same class name, for slider arrows example:
 ```html
