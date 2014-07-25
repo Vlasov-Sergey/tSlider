@@ -11,3 +11,18 @@ You will see something like this:
 ```
 **Remember:** *attach javascripts files only at end of document.*
 ##How to use##
+Create 2 DOM objects any type(div,span, a, img, etc) with mutual class name, for slider arrows example:
+```html
+    <img class="example-arrow" src="img/left-arrow.png">
+    <img class="example-arrow" src="img/right-arrow.png">
+```
+and add class ```right``` to *'arrow'*, which you want to be have right action
+```html
+    <img class="example-arrow" src="img/left-arrow.png">
+    <img class="example-arrow right" src="img/right-arrow.png">
+```
+that *important*, next you need to attach function ```tSlider()```, at right action
+```html
+    <img class="example-arrow" src="img/left-arrow.png" onClick='tSlider()'>
+    <img class="example-arrow right" src="img/right-arrow.png" onClick='tSlider()'>
+```
