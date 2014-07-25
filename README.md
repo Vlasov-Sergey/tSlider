@@ -28,12 +28,12 @@ that *important*, next you need to attach function ```tSlider()```, at right act
 ```
 next you must add attribute *'data-slider'* with class name of your slider,
 ```html
-    <img class="example-arrow" src="img/left-arrow.png" onClick="tSlider()" data-slider='slider-className'>
-    <img class="example-arrow right" src="img/right-arrow.png" onClick="tSlider()" data-slider='slider-className'>
+    <img class="example-arrow" src="img/left-arrow.png" onClick="tSlider()" data-slider='any-class-name-slider'>
+    <img class="example-arrow right" src="img/right-arrow.png" onClick="tSlider()" data-slider='any-class-name-slider'>
 ```
 make DOM object slider, and fill slides with element class-name: ```slider-block```:
 ```html
-    <div class="slider-className">
+    <div class="any-class-name-slider">
         <div class="slider-block">
             something
         </div>
@@ -44,4 +44,40 @@ make DOM object slider, and fill slides with element class-name: ```slider-block
             something
         </div>
     </div>
+```
+see CSS properties for your slider(you can use it, for pallete, and always use important, and never change it):
+```css
+    .any-class-name-slider{
+        /* Use this, and never change */
+        overflow: hidden !important;
+        white-space: nowrap !important;
+        position: (relative or absolute) !important;
+        
+        /* Edit this */
+        left: 0;
+        top: 0;
+        width: 500px;
+        height: 200px;
+    }
+    .any-class-name .slider-block{
+        /* Use this, and never change */
+        position: relative !important;
+        display: inline-block !important;
+        white-space: normal !important;
+        left: 0 !important;
+        
+        /* Edit this */
+        top: 0;
+        width: 500px;
+        height: 200px;
+        margin-right: 25px;
+        margin-left: 25px;
+        
+        /* for CSS Animation time*/
+        -webkit-transition: 400ms;
+        -moz-transition: 400ms;
+        -ms-transition: 400ms;
+        -o-transition: 400ms;
+        transition: 400ms;
+    }
 ```
